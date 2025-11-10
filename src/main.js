@@ -1,6 +1,6 @@
 import "./style.css";
-import { Cart } from "./components/cart/cart";
+import { Card } from "./components/card/card";
 
 const app = document.getElementById("app");
 
-app.append(Cart());
+app.append(Card());
