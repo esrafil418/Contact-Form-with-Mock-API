@@ -10,19 +10,19 @@ The saved contacts are also displayed dynamically on the page.
 
 ### 🛠️ Tech Stack
 
-- **Tailwind CSS** – for styling  
-- **Vanilla JavaScript (ES6)** – for logic and DOM manipulation  
-- **Mock API** – for temporary backend simulation  
+- **Tailwind CSS** – for styling
+- **Vanilla JavaScript (ES6)** – for logic and DOM manipulation
+- **Mock API** – for temporary backend simulation
 
 ---
 
 ### 📁 Project Overview
 
-1. User fills out a form with **name** and **phone number**  
-2. Data is sent to the **Mock API**  
-3. The API response is rendered dynamically on the page  
-4. The form performs **full CRUD operations** (Create, Read, Update, Delete)  
-5. The code is **modular**, allowing easy expansion and maintenance  
+1. User fills out a form with **name** and **phone number**
+2. Data is sent to the **Mock API**
+3. The API response is rendered dynamically on the page
+4. The form performs **full CRUD operations** (Create, Read, Update, Delete)
+5. The code is **modular**, allowing easy expansion and maintenance
 
 ---
 
@@ -31,6 +31,7 @@ The saved contacts are also displayed dynamically on the page.
 A key part of this project is the custom `El()` function, which helps create DOM elements in a **clean and reusable** way — instead of writing repetitive `document.createElement` and `appendChild` lines.
 
 ### Function Definition
+
 ```js
 export function El({
   element,
@@ -77,14 +78,16 @@ export function El({
 ```
 
 ### 🔍 How It Works
-- `element` → defines which HTML tag to create (e.g., `"div"`, `"button"`, `"input"`)  
-- `children` → array of elements or text nodes to be appended  
-- `eventListener` → attaches events like `click`, `submit`, etc.  
-- `dataset` → sets `data-*` attributes easily  
-- `rest` → allows passing native JS element properties such as `className`, `innerText`, `src`, etc.  
+
+- `element` → defines which HTML tag to create (e.g., `"div"`, `"button"`, `"input"`)
+- `children` → array of elements or text nodes to be appended
+- `eventListener` → attaches events like `click`, `submit`, etc.
+- `dataset` → sets `data-*` attributes easily
+- `rest` → allows passing native JS element properties such as `className`, `innerText`, `src`, etc.
 - `restAttrs` → for additional attributes like `id`, `placeholder`, `type`, etc.
 
 ### ✅ Example Usage
+
 ```js
 const btn = El({
   element: "button",
@@ -100,6 +103,7 @@ const btn = El({
 ```
 
 This would create:
+
 ```html
 <button class="bg-blue-500 text-white px-4 py-2 rounded">Add Contact</button>
 ```
@@ -108,21 +112,7 @@ This would create:
 
 ## 🚀 How to Run
 
-1. Clone this repository  
-2. Install dependencies (npm install)  
-3. Put your **mock api** link in the base.js file 
-4. Open the `index.html` file in your browser  
-
----
-
-## 🧠 Future Improvements
-
-- Make the project **responsive** for mobile and tablet  
-- Add **form validation**  
-- Implement **edit / delete** functionality  
-- Enhance UI with animations and transitions  
-
----
-
-**Author:** [Your Name]  
-**License:** MIT  
+1. Clone this repository
+2. Install dependencies (npm install)
+3. Put your **mock api** link in the base.js file
+4. Open the `index.html` file in your browser
