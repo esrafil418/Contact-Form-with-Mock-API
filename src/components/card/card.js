@@ -9,13 +9,12 @@ export function Card() {
   const container = El({
     element: "div",
     className:
-      "w-full h-full flex flex-col justify-center items-center gap-2 border border-white/10 rounded-lg p-10 bg-white md:w-[900px] md:mx-auto",
+      "w-full h-full flex flex-col justify-center items-center border border-white/10 rounded-lg md:w-[900px] md:mx-auto",
   });
   // table
   const table = El({
     element: "div",
-    className:
-      "bg-[#ecf2f7] h-[100vh] w-full flex flex-col justify-center items-center",
+    className: "h-[100vh] w-full flex flex-col justify-center items-center",
     children: [
       El({
         element: "div",
@@ -63,31 +62,35 @@ export function Card() {
             ],
           }),
           El({
-            element: "table",
-            className: "w-full h-[300px] text-center",
+            element: "div",
+            className:
+              "overflow-auto max-h-80 border border-gray-200 rounded-lg",
             children: [
               El({
-                element: "thead",
-                className: "bg-gray-400 ",
+                element: "table",
+                className: "w-full text-center divide-y divide-gray-200",
                 children: [
                   El({
-                    element: "tr",
-                    className: "",
+                    element: "thead",
+                    className: "bg-gray-400",
                     children: [
                       El({
-                        element: "th",
-                        className: "",
-                        innerText: "نام",
-                      }),
-                      El({
-                        element: "th",
-                        className: "",
-                        innerText: "شماره",
-                      }),
-                      El({
-                        element: "th",
-                        className: "",
-                        innerText: "عملیات",
+                        element: "tr",
+                        className: "text-gray-100",
+                        children: [
+                          El({
+                            element: "th",
+                            innerText: "نام و نام خانوادگی",
+                          }),
+                          El({
+                            element: "th",
+                            innerText: "شماره همراه",
+                          }),
+                          El({
+                            element: "th",
+                            innerText: "ویرایش و حذف",
+                          }),
+                        ],
                       }),
                     ],
                   }),
@@ -109,13 +112,14 @@ export function Card() {
       tableEl.append(
         El({
           element: "tbody",
-          className: "",
+          className: "divide-y divide-gray-200",
           children: [
             El({
               element: "tr",
               children: [
                 El({
                   element: "td",
+                  className: "py-3",
                   innerText: item.name,
                   id: "user-name",
                 }),
