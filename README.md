@@ -16,13 +16,21 @@ The saved contacts are also displayed dynamically on the page.
 
 ---
 
-### 📁 Project Overview
+### 📁 Algorithm and flowcharts
 
 1. User fills out a form with **name** and **phone number**
 2. Data is sent to the **Mock API**
 3. The API response is rendered dynamically on the page
 4. The form performs **full CRUD operations** (Create, Read, Update, Delete)
 5. The code is **modular**, allowing easy expansion and maintenance
+
+![Project Algorithm](./flowcharts/flow-1.png)
+
+![Project Algorithm](./flowcharts/flow-2.jpg)
+
+![Project Algorithm](./flowcharts/flow-4.jpg)
+
+![Project Flowchart](./flowcharts/flow-3.jpg)
 
 ---
 
